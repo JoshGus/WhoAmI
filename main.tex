@@ -1,13 +1,13 @@
 %-------------------------
 % Resume in Latex
-% Author : Jake Gutierrez
+% Template Author : Jake Gutierrez
 % Based off of: https://github.com/sb2nov/resume
 % License : MIT
 % Thank you Jake Gutierrez
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
-
+\usepackage[top=0.4in, bottom=0.1in, left=0.1in, right=0.1in]{geometry}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -42,11 +42,11 @@
 
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1.0in}
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
 \addtolength{\topmargin}{-.6in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\textheight}{1.2in}
 
 \urlstyle{same}
 
@@ -72,34 +72,34 @@
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{.98\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{.98\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-7pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-8pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.10in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5.3pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -125,7 +125,7 @@
       {Bachelors in Engineering - Computer Science} {Ann Arbor, MI}
       % PRESENTED INFORMATION FOR THE UI TEAM???
       \resumeItemListStart
-        \resumeItem{Relevant Courses: Data Structures \& Algorithms, Discrete Math, Linear Algebra, Technical Communication, }
+        \resumeItem{Relevant Courses: Data Structures \& Algorithms, Discrete Math, Linear Algebra, Intro to Computer Organization }
         \resumeItem{William J. Branstrom Freshman Prize, 2023 University Honors}
       \resumeItemListEnd
 \resumeSubHeadingListEnd
@@ -176,7 +176,7 @@
       {Full Stack Developer}{Jun. 2020 -- Sep. 2023}
       {Dubai Association of Varsity Sports}{Dubai, UAE}
       \resumeItemListStart
-        \resumeItem{Produced a dynamic website for the Dubai varsity basketball league using HTML, CSS, JavaScript, PHP, and MySQL to showcase statistics for 200+ players, reaching \( \ 500+ \) monthly website viewers.}
+        \resumeItem{Produced a dynamic website for the Dubai varsity basketball league using HTML, CSS, JavaScript, PHP, and MySQL to showcase statistics for 200+ players, reaching \( \ 500+ \) monthly website viewers}
         \resumeItem{Engaged and facilitated meetings with prospective corporate partners to sponsor community events}
     \resumeItemListEnd
   \resumeSubHeadingListEnd
@@ -188,25 +188,22 @@
     \resumeProjectHeading
           {\textbf{Machine Learning Post Classifier} $|$ \emph{C++, Visual Studio Code, Git}}{Jan. 2024 -- May. 2024}
           \resumeItemListStart
-            \resumeItem{Constructed a Naive Bayes Machine Learning Model labeling new Piazza posts based on previous labeled data.}
-            \resumeItem{Utilized natural language processing techniques to parse and analyze over 100 CSV files, allowing the model to efficiently learn and continuously improve associations between keywords and labels.}
+            \resumeItem{Constructed a Naive Bayes Machine Learning Model to label Piazza posts, allowing the model to efficiently learn and continuously improve associations between keywords and labels}
           \resumeItemListEnd
     \resumeProjectHeading
           {\textbf{Data Transmission Error Detection \& Correction Instructional Aid} $|$ \emph{C++}}{Aug. 2023 -- Nov. 2023}
           \resumeItemListStart
-            \resumeItem{Enhanced data communication reliability in a simulated environment by designing additional hybrid algorithms capable of encoding and decoding error-resilient messages}
-            \resumeItem{Developed an instructional aid to display the effects of data transmission error and the limitations of utilizing common methods of data integrity protection}
+            \resumeItem{Developed instructional tool simulating data transmission errors, demonstrating improvement through hybrid algorithms}
           \resumeItemListEnd
     \resumeProjectHeading
           {\textbf{Multiplayer Online Board Game} $|$ \emph{C\#, Unity}}{Sep. 2021 -- Jul. 2023}
           \resumeItemListStart
-            \resumeItem{Built a Board Game application using C\# and Unity employing a Test-Driven Development methodology that integrates real-time connectivity and a database backed account system}
-            \resumeItem{Led stakeholder interviews and user testing sessions, surveying target demographic to capture concept feedback}
-            \resumeItem{Created a 100-page design development document, including research to enhance accessibility features for visually impaired users}
+            \resumeItem{Developed an application in C\# and Unity using Test-Driven Development, integrating live LAN multiplayer capabilities}  
+            \resumeItem{Led stakeholder interviews and user testing, producing a design document with research on accessibility features for users}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 %GAPS
-
+\vspace{-16pt}
 
 %-----------Leadership-----------
 \section{Leadership and Extracurriculars} 
@@ -219,17 +216,16 @@
           \resumeItemListEnd
 
         \resumeProjectHeading
-          {\textbf{Taekwondo} $|$ \emph{1st Degree Black Belt / Collegiate Athlete}}{Aug. 2015 -- Current}
+          {\textbf{University of Michigan Club Sports, Taekwondo} $|$ \emph{1st Degree Black Belt / Collegiate Athlete}}{Aug. 2015 -- Current}
           \resumeItemListStart
             \resumeItem{Led training sessions for new members, helping them improve and understand the principles of Taekwondo}
-            
             \resumeItem{Competed in the MIT and Princeton 2024 Collegiate Tournaments as part of the University of Michigan's A1 team}
           \resumeItemListEnd
 
         \resumeProjectHeading
           {\textbf{Living Arts Engine (LAE)} $|$ \emph{Learning Community Member}}{Aug. 2023 -- Jul. 2024}
           \resumeItemListStart
-            \resumeItem{Competed in the LAE MakeAThon producing a dynamic installation artwork on the relationship between Art and Artificial Intelligence. Achieved first place and won cash prize.}
+            \resumeItem{Won UMich LAE MakeAThon with a presentation on the tension between art and artificial intelligence.}
           \resumeItemListEnd
 
     \resumeSubHeadingListEnd
@@ -240,8 +236,9 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages and Frameworks}{: Python, C, C++, C\#, SQL, PHP, HTML, CSS, Swift, Django} \\
-     \textbf{Developer Tools and Skills}{: Git, VSCode, XCode, Microsoft Office, Google Suite, Unity, Blender, Fusion 360, Figma} \\
+     \textbf{Known Languages and Frameworks}{: Python, C, C++, C\#, SQL, PHP, HTML, CSS, Swift, Django, LaTeX} \\
+     \textbf{Developer Tools and Skills}{: Git, VSCode, XCode, Microsoft Office, Google Suite, Unity, SPSS} \\
+     \textbf{CAD and Design}{: Blender, Fusion 360, Figma} \\
      \textbf{Libraries}{: pandas, NumPy, Matplotlib, scikitlearn} \\ }
      }
  \end{itemize}
