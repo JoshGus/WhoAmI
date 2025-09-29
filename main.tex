@@ -1,0 +1,251 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+% Thank you Jake Gutierrez
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2.5pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-7pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.10in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5.3pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\vspace{-26pt}
+\begin{center}
+    \textbf{\Huge \scshape Joshua Gustaveson} \\ \vspace{1pt}
+    \small 801-600-0229 $|$ \href{mailto:joshgus@umich.edu}{\underline{joshgus@umich.edu}} $|$ 
+    \href{https://linkedin.com/in/joshuagustaveson}{\underline{linkedin.com/in/joshuagustaveson}}  % $|$
+    %\href{https://github.com/JoshGus}{\underline{github.com/JoshGus}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Michigan - Ann Arbor}{Aug. 2023 -- Apr. 2027 (Anticipated)}
+      {Bachelors in Engineering - Computer Science} {Ann Arbor, MI}
+      % PRESENTED INFORMATION FOR THE UI TEAM???
+      \resumeItemListStart
+        \resumeItem{Relevant Courses: Data Structures \& Algorithms, Discrete Math, Linear Algebra, Technical Communication, }
+        \resumeItem{William J. Branstrom Freshman Prize, 2023 University Honors}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+%GAPS
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Classroom Tech Maintenance Technician}{May 2025 -- Current}
+      {University of Michigan Computer Aided Engineering (CAEN) Services}{Ann Arbor, MI}
+      \resumeItemListStart
+        \resumeItem{Maintained instructional tech across 70+ classrooms, including AV systems, control panels, and desktop stations}
+        \resumeItem{Balanced service tickets and scheduled tasks to ensure minimal downtime for instructional spaces}
+        \resumeItem{Collaborated with CAEN engineers to deploy equipment and troubleshoot hardware/software failures}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Website Manager / Administrative Assistant}{Mar. 2025 -- Current}
+      {Leinweber Institute for Theoretical Physics (LITP)}{Ann Arbor, MI}
+      \resumeItemListStart
+        \resumeItem{Maintained the institute’s websites, ensuring up-to-date event listings, research pages, and faculty profiles}
+        \resumeItem{Organized communications, scheduling, and logistics for lectures, conferences, and workshops}
+        \resumeItem{Performed administrative operations, including calendar management, procurement, and documentation}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Frontend Development Lead}{Apr. 2024 -- Sep. 2024}
+      {Slow (AI enabled Mental Health Application)}{Ogden, UT}
+      % PRESENTED INFORMATION FOR THE UI TEAM???
+      \resumeItemListStart
+        \resumeItem{Led development of Swift based mobile application, utilizing Scrum framework to manage UI/UX issues and goals}
+        \resumeItem{Facilitated User Acceptance Testing, gathering stakeholder feedback to iteratively refine features before launch}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Full Stack Developer}{Jun. 2020 -- Sep. 2023}
+      {Dubai Association of Varsity Sports}{Dubai, UAE}
+      \resumeItemListStart
+        \resumeItem{Produced a dynamic website for the Dubai varsity basketball league using HTML, CSS, JavaScript, PHP, and MySQL to showcase statistics for 200+ players, reaching \( \ 500+ \) monthly website viewers.}
+        \resumeItem{Engaged and facilitated meetings with prospective corporate partners to sponsor community events}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%GAPS
+%-----------PROJECTS-----------
+\section{Relevant Projects} 
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Machine Learning Post Classifier} $|$ \emph{C++, Visual Studio Code, Git}}{Jan. 2024 -- May. 2024}
+          \resumeItemListStart
+            \resumeItem{Constructed a Naive Bayes Machine Learning Model labeling new Piazza posts based on previous labeled data.}
+            \resumeItem{Utilized natural language processing techniques to parse and analyze over 100 CSV files, allowing the model to efficiently learn and continuously improve associations between keywords and labels.}
+          \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{Data Transmission Error Detection \& Correction Instructional Aid} $|$ \emph{C++}}{Aug. 2023 -- Nov. 2023}
+          \resumeItemListStart
+            \resumeItem{Enhanced data communication reliability in a simulated environment by designing additional hybrid algorithms capable of encoding and decoding error-resilient messages}
+            \resumeItem{Developed an instructional aid to display the effects of data transmission error and the limitations of utilizing common methods of data integrity protection}
+          \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{Multiplayer Online Board Game} $|$ \emph{C\#, Unity}}{Sep. 2021 -- Jul. 2023}
+          \resumeItemListStart
+            \resumeItem{Built a Board Game application using C\# and Unity employing a Test-Driven Development methodology that integrates real-time connectivity and a database backed account system}
+            \resumeItem{Led stakeholder interviews and user testing sessions, surveying target demographic to capture concept feedback}
+            \resumeItem{Created a 100-page design development document, including research to enhance accessibility features for visually impaired users}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%GAPS
+
+
+%-----------Leadership-----------
+\section{Leadership and Extracurriculars} 
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Michigan Task-Based Robotics Project Team} $|$ \emph{Programming Team Member}}{Aug. 2024 -- Current}
+          \resumeItemListStart
+            \resumeItem{Worked in a team to program autonomous navigation algorithms to perform tasks in dynamic environments}
+            \resumeItem{Collaborated with mechanical team to integrate software solutions with a variety of sensors and motor systems}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{Taekwondo} $|$ \emph{1st Degree Black Belt / Collegiate Athlete}}{Aug. 2015 -- Current}
+          \resumeItemListStart
+            \resumeItem{Led training sessions for new members, helping them improve and understand the principles of Taekwondo}
+            
+            \resumeItem{Competed in the MIT and Princeton 2024 Collegiate Tournaments as part of the University of Michigan's A1 team}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{Living Arts Engine (LAE)} $|$ \emph{Learning Community Member}}{Aug. 2023 -- Jul. 2024}
+          \resumeItemListStart
+            \resumeItem{Competed in the LAE MakeAThon producing a dynamic installation artwork on the relationship between Art and Artificial Intelligence. Achieved first place and won cash prize.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%GAPS
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages and Frameworks}{: Python, C, C++, C\#, SQL, PHP, HTML, CSS, Swift, Django} \\
+     \textbf{Developer Tools and Skills}{: Git, VSCode, XCode, Microsoft Office, Google Suite, Unity, Blender, Fusion 360, Figma} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib, scikitlearn} \\ }
+     }
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
